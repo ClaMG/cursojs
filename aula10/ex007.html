@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font: normal 18pt arial;
+        }
+        input{
+            font: normal 18pt arial;
+            width: 100px;
+        }
+        div{
+            margin-top: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Somando Valores</h1>
+    <input type="number" name="n1" id="tn1"> +
+    <input type="number" name="n2" id="tn2"> 
+    <input type="button" value="Somar" onclick="somar()">
+    <div id="d">Resultado</div>
+
+    <script>
+        function somar(){
+            num1 = document.getElementById('tn1')
+            num2 = document.getElementById('tn2')
+            res = document.getElementById('d')
+            n1 = Number(num1.value)
+            n2 = Number(num2.value)
+            s = n1 + n2
+            res.innerHTML = `A soma de <i>${n1}</i> e <i>${n2}</i> é igual a : <strong>${s}</strong>`
+        }
+    </script>
+</body>
+</html>
