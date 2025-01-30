@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Iniciar dom</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JS</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        corpo = document.body
+        p1 = document.getElementsByTagName('p')[0]
+        p2 = document.getElementsByTagName('p')[1]
+        d = document.getElementById('msg') // ou d = document.getElementsByName('msg')[0]
+        //prt 4
+        d.style.background = 'green'
+        d.innerText = 'Estou aguardando'
+
+        //prt 3
+        document.write(p2.innerText)
+        document.write(p2.innerHTML)
+
+        //prt 2
+        p1.style.color ='red'
+        corpo.style.background ='black'
+
+        //prt 1
+        document.write(window.document.charset)
+        document.write(window.navigator)
+        document.write(window.document.url)
+    </script>
+</body>
+</html>
